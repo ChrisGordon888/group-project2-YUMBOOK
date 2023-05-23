@@ -1,0 +1,48 @@
+<div class="hero-section">
+  {{!-- <h3>Yumbook</h3> --}}
+  <p>Discover delicious recipes that you can make at home.</p>
+
+  <div class = "hero-search-bar">
+    <input type= "text" class="search-content" placeholder="Serach for a recipe" id = "search-input">
+    <button type= "submit" class="search-btn-1" id="search-btn"><i class="fas fa-search"></i></button>
+  </div>
+
+
+<div class="hero-section">
+  <!-- hero section content -->
+</div>
+
+<div class="recipe-result">
+  {{!-- <h2 class="title">Search Results:</h2>
+  <div id="meal"> --}}
+    <!-- recipe search item -->
+    {{!-- {{#each recipes}} --}}
+      {{!-- <div class="recipe-item" data-id="{{this.recipeId}}">
+        <div class="recipe-img-box">
+          <img class="recipe-img" src="{{this.recipeImage}}" alt="food">
+        </div>
+        <div class="recipe-name">
+          <h3>{{this.recipeTitle}}</h3>
+          <a href="#" class="recipe-btn">Get Recipe</a>
+        </div>
+      </div> --}}
+    {{!-- {{/each}} --}}
+    <!-- recipe search item End -->
+  </div>
+</div>
+
+<script id="recipe-template-1" type="text/x-handlebars-template">
+  {{!-- Handlebars template code --}}
+  <div class="recipe-container">
+    {{#each recipes}}
+      <div class="recipe-card">
+        <img src="{{this.image}}" alt="{{this.name}}">
+        <h3>{{this.name}}</h3>
+        <p>{{this.description}}</p>
+        <!-- Add any additional recipe details as needed -->
+      </div>
+    {{/each}}
+  </div>
+</script>
+
+<script src="/js/recipe.js"></script>
