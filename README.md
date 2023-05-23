@@ -15,7 +15,7 @@ Database - MYSQL
 Additional Libraries/Frameworks - ()
 
 Installation:
-Clone the repository - copy the ssh clone link ('git@github.com:ChrisGordon888/group-project2-test.git')
+Clone the repository - copy the ssh clone link ('git@github.com: ChrisGordon888/group-project2-test.git')
 Navigate to the project directory - cd to your YUMBOOK directory on your local drive and git clone the ssh link 
 Install dependencies and view in browser - npm install in your terminal when opening the code in the application of choice; we used VScode
 Start the server in your browser: npm start in your root file through the terminal to open a port, and open your browser by visiting: http://localhost:3000 or the running port number
