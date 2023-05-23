@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+   
+    <!-- include any necessary CSS or JavaScript files here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/handlebars@4.7.7/dist/handlebars.min.js"></script>
+
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <title>{{title}}</title>
+</head>
+<body>
+    <header> <!-- website logo, navigation menu, etc. here -->
+
+        <a href="/" class="logo">YumBook</a>
+        <nav class="navbar">
+                {{!-- <a href="/home">Home</a> --}}
+                <a href="/recipes">Recipes</a>
+                <a href="/journal">My Journal</a>
+                <a href="/team">The Team</a>
+        </nav>
+
+        {{!-- <div class="icons">
+            <i class="fas fa-search" id="search-icon"></i>
+            <a href="#" class="fas fa-heart"></a>
+        </div> --}}
+
+        <div class="user-button">
+            <a href="/login">Login</a>
+    </header>
+
+
+    <main>
+        {{!-- this is where the content of each page will be inserted --}}
+        {{{body}}}
+    </main>
+
+
+    <footer>
+        <!-- include your footer content here -->
+        <p>&copy; 2023 Yumbook</p>
+    </footer>
+</body>
+</html>

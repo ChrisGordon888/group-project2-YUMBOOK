@@ -1,0 +1,379 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Roboto:wght@300&display=swap');
+
+
+*{
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+}
+
+/* html {
+  font-size: 80%; 
+  overflow: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+  
+} */
+
+
+body {
+  background: #191919;
+  color: #fff;
+  font-weight: 300;
+  font-size: 1.05rem;
+  margin: 0;
+  padding-top: 75px;
+  font-family: 'Roboto', sans-serif;
+  background-image: url(https://img.freepik.com/free-photo/flat-lay-composition-mexican-food-with-copyspace_23-2148140347.jpg?w=1380&t=st=1684796211~exp=1684796811~hmac=52df98b2ae855bf5ec63ddd4cebcede3c799a51d7acaf02263cab03cde3b8f85);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  z-index: 1000;
+  display: flex;
+  /* align-items: center; */
+  justify-content: space-between;
+  background-color: #191919;
+  padding: 1rem 9%;
+  box-shadow: 0 .5rem 1rem rgba(255, 255, 255, 0.1);
+
+  
+ 
+}
+
+header .logo{
+  font-family: 'Caveat', cursive;
+  color: rgb(255, 255, 255);
+  font-size: 2.0rem;
+  font-weight: bolder;
+ 
+}
+
+
+
+header .navbar a{
+  font-size: 1.25rem;
+  margin-left: 2rem;
+  border-radius: .5rem;
+  padding: .5rem .5rem;
+  color: rgb(255, 255, 255); 
+}
+
+.user-button a{
+  font-size: 1.25rem;
+  margin-left: 2rem;
+  border-radius: .5rem;
+  padding: .5rem .5rem;
+  color: rgb(0, 0, 0); 
+  background-color: rgb(235, 223, 0);
+}
+
+
+
+header .navbar a.active,
+header .navbar a:hover{
+  color: #000000;
+  background-color: rgb(235, 223, 0);
+}
+
+header .icon i:hover,
+header .icon a:hover{
+  color:#ffffff;
+  background: rgb(235, 223, 0);
+  transform: rotate(360deg);
+
+}
+
+.navbar {
+  align-items: right;
+  padding-left: 40%;
+}
+
+.btn {
+  font-family: 'Oswald', sans-serif;
+  cursor: pointer;
+  outline: 0;
+  font-size: 1.0rem;
+}
+
+.hero-section {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding-top: 5rem;
+  /* background-color: #f7f7f7; */
+  color: #fff;
+  text-align: center;
+  padding-left: 100px;
+}
+
+.hero-section p{
+  font-family: 'Caveat', cursive;
+  font-size: 2rem;
+}
+
+.hero-search-bar {
+  margin: 1.2rem;
+  position: center;
+  display: flex;
+  align-items: stretch;
+  
+}
+
+.search-content {
+  width: 100%;
+  padding: 0 2rem;
+  font-size: 1.1rem;
+  font-family: inherit;
+  outline: 0;
+  border: 2px solid;
+  color: rgb(0, 0, 0);
+  border-top-left-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+}
+
+.search-btn {
+  width: 100px;
+  height: 55px;
+  font-size: 1.8rem;
+  background: aqua;
+  border: none;
+  border-top-right-radius: 5rem;
+  border-bottom-right-radius: 2rem;
+}
+
+.search-btn:hover {
+  background: rgb(235, 223, 0);
+}
+
+.recipe-result {
+  margin-top: 4rem;
+}
+
+#meal {
+  margin: 2.4rem;
+}
+
+.recipe-item {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 25px -15px rgb(255, 255, 255);
+  margin: 2rem 0;
+  background-color: #fff;
+  color: #000000;
+  /* width: 20%; */
+}
+
+.recipe-img {
+  /* width: 100%;
+  display: block; */
+}
+
+.recipe-img-box {
+  width: 100%;
+  display: block;
+}
+
+.recipe-name {
+  padding: 0.5rem 0.5rem;
+}
+
+.recipe-name h3 {
+  font-size: 1.4rem;
+}
+
+.recipe-btn {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  background: #000000;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 175px;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  transition: all 0.4s linear;
+}
+
+.recipe-btn:hover {
+  background: rgb(235, 223, 0);
+}
+
+.recipe-details{
+
+}
+
+.login-form{
+  /* background-color: #000000; */
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 1.50rem;
+ 
+}
+
+.login-btn{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 100px;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  transition: all 0.4s linear;
+}
+
+.signup-form{
+  /* background-color: #000000; */
+  border-radius: 5px;
+  text-align: center;
+  padding-top: 100px;
+  font-size: 1.50rem;
+}
+.signup-btn{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 1.1rem;
+  padding: 0.75rem 0;
+  display: block;
+  width: 100px;
+  margin: 1rem auto;
+  border-radius: 2rem;
+  transition: all 0.4s linear;
+}
+
+ 
+
+.journal-form{
+  color: #000000;
+  text-align: center;
+}
+
+/* Media queries */
+
+@media screen and (min-width: 998px){
+  #meal{
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 768px) {
+
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+}
+
+@media screen and (min-width: 600px) {
+  .hero-search-bar {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.recipe-img{
+  margin: 0;
+}
+
+
+
+  
+
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style:none;
+  text-decoration: none;
+}
+
+nav ul li {
+display: inline-block;
+margin-right: 20px;
+}
+
+nav ul li:last-child {
+margin-right: 0;
+}
+
+nav ul li a {
+text-decoration: none;
+color: #333;
+font-size: 16px;
+font-weight: bold;
+}
+
+nav ul li a:hover {
+color: #666;
+}
+
+footer {
+/* background-color: #eee; */
+padding: 50px ;
+text-align: center;
+color: #fff;
+}
+
+.recipe-container {
+display: grid;
+grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+grid-gap: 20px;
+}
+
+.recipe-card {
+background-color: #fff;
+padding: 20px;
+border-radius: 5px;
+box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+save_btn {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.save_btn:hover {
+  background-color: #45a049;
+}
+
+.journal-form-input {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+.journal-form {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
